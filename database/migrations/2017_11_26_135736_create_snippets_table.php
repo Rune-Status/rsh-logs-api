@@ -18,7 +18,7 @@ class CreateSnippetsTable extends Migration
             $table->integer('topic_id')->unsigned();
             $table->integer('post_id')->unsigned();
             $table->integer('author_id')->unsigned();
-            $table->text('body');
+            $table->longText('body');
             $table->timestamps();
         });
     }
