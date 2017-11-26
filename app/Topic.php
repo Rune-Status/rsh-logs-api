@@ -32,7 +32,7 @@ class Topic extends Model implements HasMedia
 
     public static function getRevisionFromTitle(string $title)
     {
-        preg_match('~^#(?P<rev>\d+)$~', $title, $matches);
+        preg_match('~^#?(?P<rev>\d+)$~', $title, $matches);
 
         if (!Arr::has($matches, 'rev')) {
             return null;
