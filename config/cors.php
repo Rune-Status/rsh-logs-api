@@ -13,7 +13,10 @@ return [
     */
    
     'supportsCredentials' => false,
-    'allowedOrigins' => ['*'],
+    'allowedOrigins' => [
+        'localhost:8080',
+        'gpack.me',
+    ],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['GET'],
     'exposedHeaders' => [],
